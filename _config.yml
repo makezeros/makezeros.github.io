@@ -168,7 +168,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           }
           @media (min-aspect-ratio: 2400/1850) {
             .wrap {
-              background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/71932901_p0.webp);
+              background-image: url(https://raw.githubusercontent.com/makezeros/pic_bed/master/img/yourname.jpg);
             }
           }
         </style>
