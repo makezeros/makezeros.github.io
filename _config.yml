@@ -407,7 +407,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         <style>
           @media (min-width: 56em) {
             .container {
-              max-width: 61.8%;
+              max-width: 72%;
             }
           }
         </style>
