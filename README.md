@@ -13,7 +13,4 @@
 <!-- slide vertical=true -->
 
 ## 一辈子，总要找一些能为之执着的事
-
-<!-- slide vertical=true -->
-
-##  ![找寻你](https://raw.githubusercontent.com/makezeros/pic_bed/master/img/yourname.jpg)
+ ![找寻你](https://raw.githubusercontent.com/makezeros/pic_bed/master/img/yourname.jpg)
