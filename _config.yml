@@ -50,12 +50,12 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
       - | # 网站小图标，可换成你自己的图片，改href中的部分即可
         <link
           rel="apple-touch-icon-precomposed"
-          href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320"
+          href="https://raw.githubusercontent.com/makezeros/pic_bed/master/img/marker.jpg"
         />
         <link
           rel="shortcut
           icon"
-          href="https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=32"
+          href="https://raw.githubusercontent.com/makezeros/pic_bed/master/img/marker_small.jpg"
         />
       - | # 来自lanyon的页面样式，不要改
         <link
@@ -134,7 +134,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                     "text": "这是标题~"
                   }, {
                     "selector": ".v",
-                    "text": "评论没有审核，要对自己的发言负责哦~"
+                    "text": "评论没有开放~"
                   }]
                 },
                 "model": [
@@ -164,11 +164,11 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             background-position: center top;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-image: url(https://Mizuno-Ai.wu-kan.cn/pixiv/74559485_p1.webp);
+            background-image: url(https://raw.githubusercontent.com/makezeros/pic_bed/master/img/guisha.jpg);
           }
           @media (min-aspect-ratio: 2400/1850) {
             .wrap {
-              background-image: url(https://raw.githubusercontent.com/makezeros/pic_bed/master/img/yourname.jpg);
+              background-image: url(https://raw.githubusercontent.com/makezeros/pic_bed/master/img/ani-back.jpg);
             }
           }
         </style>
@@ -182,7 +182,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           h5,
           h6,
           .sidebar {
-            font-family: Menlo, Monaco, "Courier New", Microsoft JhengHei, monospace;
+            font-family: Source Han Sans, Monaco, "Courier New", Microsoft JhengHei, monospace;
           }
         </style>
       - | # 侧边栏头像效果
@@ -308,47 +308,47 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             src='https://cdn.jsdelivr.net/npm/html-contents/html-contents.min.js'
             onload="htmlContents('#toc', {listType: 'o', filter: function(arr) {return !arr.matches('.masthead-title')}})"
           ></script>
-        - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
-          <div>
-            <i class="fas fa-cog fa-spin fa-fw"></i>
-            <span id="run_time_day">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>天
-            <span id="run_time_hour">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>时
-            <span id="run_time_minute">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>分
-            <span id="run_time_second">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>秒
-            <script>
-              setInterval(function (BirthDay) {
-                function setzero(i) {
-                  if (i < 10) return "0" + i;
-                  return i;
-                }
-                BirthDay = new Date(BirthDay);
-                today = new Date();
-                timeold = (today.getTime() - BirthDay.getTime());
-                sectimeold = timeold / 1000;
-                secondsold = Math.floor(sectimeold);
-                msPerDay = 24 * 60 * 60 * 1000;
-                e_daysold = timeold / msPerDay;
-                daysold = Math.floor(e_daysold);
-                e_hrsold = (e_daysold - daysold) * 24;
-                hrsold = Math.floor(e_hrsold);
-                e_minsold = (e_hrsold - hrsold) * 60;
-                minsold = Math.floor((e_hrsold - hrsold) * 60);
-                seconds = Math.floor((e_minsold - minsold) * 60);
-                document.getElementById("run_time_day").innerHTML = daysold;
-                document.getElementById("run_time_hour").innerHTML = setzero(hrsold);
-                document.getElementById("run_time_minute").innerHTML = setzero(minsold);
-                document.getElementById("run_time_second").innerHTML = setzero(seconds);
-              }, 1000, "10/04/2017 11:03:56") // 这是我第一篇CSDN博客的时间
-            </script>
-          </div>
+        # - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
+        #   <div>
+        #     <i class="fas fa-cog fa-spin fa-fw"></i>
+        #     <span id="run_time_day">
+        #       <i class="fas fa-spinner fa-pulse"></i>
+        #     </span>天
+        #     <span id="run_time_hour">
+        #       <i class="fas fa-spinner fa-pulse"></i>
+        #     </span>时
+        #     <span id="run_time_minute">
+        #       <i class="fas fa-spinner fa-pulse"></i>
+        #     </span>分
+        #     <span id="run_time_second">
+        #       <i class="fas fa-spinner fa-pulse"></i>
+        #     </span>秒
+        #     <script>
+        #       setInterval(function (BirthDay) {
+        #         function setzero(i) {
+        #           if (i < 10) return "0" + i;
+        #           return i;
+        #         }
+        #         BirthDay = new Date(BirthDay);
+        #         today = new Date();
+        #         timeold = (today.getTime() - BirthDay.getTime());
+        #         sectimeold = timeold / 1000;
+        #         secondsold = Math.floor(sectimeold);
+        #         msPerDay = 24 * 60 * 60 * 1000;
+        #         e_daysold = timeold / msPerDay;
+        #         daysold = Math.floor(e_daysold);
+        #         e_hrsold = (e_daysold - daysold) * 24;
+        #         hrsold = Math.floor(e_hrsold);
+        #         e_minsold = (e_hrsold - hrsold) * 60;
+        #         minsold = Math.floor((e_hrsold - hrsold) * 60);
+        #         seconds = Math.floor((e_minsold - minsold) * 60);
+        #         document.getElementById("run_time_day").innerHTML = daysold;
+        #         document.getElementById("run_time_hour").innerHTML = setzero(hrsold);
+        #         document.getElementById("run_time_minute").innerHTML = setzero(minsold);
+        #         document.getElementById("run_time_second").innerHTML = setzero(seconds);
+        #       }, 1000, "02/04/2020 21:00:00") 
+        #     </script>
+        #   </div>
         - | # 不蒜子页面统计，看不懂可不改
           <div>
             <div>
@@ -377,7 +377,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
         - | # Copyright声明
           <div>
             <i class="fas fa-copyright fa-fw"></i>
-            2017-2020 WuK
+            created by Wu-Kan, style-modified by MakeZeros
           </div>
         - | # 觉得我的主题好用的话，让更多的人知道它吧！
           <div>
@@ -418,7 +418,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             padding-top: 1rem;
             padding-bottom: 1rem;
             box-shadow: 0 0 .75rem rgba(0, 0, 0, 0.1);
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             animation: animationAppear 2s;
           }
           @keyframes animationAppear {
@@ -487,29 +487,29 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
               return button;
             })'
         ></script>
-  comments: # 留言页
-    alert: | # 配置评论区，appId和appKey需要换成你自己的，见<https://valine.js.org/configuration.html>
-      <div class="v">
-        <i class="fas fa-spinner fa-pulse"></i>
-      </div>
-      <script
-        src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'
-        defer='defer'
-        onload='
-          new Valine({
-            "el": ".v",
-            "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
-            "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
-            "notify": "true",
-            "verify": "true",
-            "avatar": "identicon",
-            "placeholder": "在这里评论吧！",
-            "visitor": true,
-            "highlight": true,
-            "avatarForce": false,
-            "recordIP": true
-          })'
-      ></script>
+  # comments: # 留言页
+  #   alert: | # 配置评论区，appId和appKey需要换成你自己的，见<https://valine.js.org/configuration.html>
+  #     <div class="v">
+  #       <i class="fas fa-spinner fa-pulse"></i>
+  #     </div>
+  #     <script
+  #       src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'
+  #       defer='defer'
+  #       onload='
+  #         new Valine({
+  #           "el": ".v",
+  #           "appId": "9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz",
+  #           "appKey": "NJ7RwmgrxsF7KDzlqU7YewlL",
+  #           "notify": "true",
+  #           "verify": "true",
+  #           "avatar": "identicon",
+  #           "placeholder": "在这里评论吧！",
+  #           "visitor": true,
+  #           "highlight": true,
+  #           "avatarForce": false,
+  #           "recordIP": true
+  #         })'
+  #     ></script>
   post:
     date: # 显示博文时间
       enable: true
@@ -524,7 +524,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
       unit: 分
       divided_by: 300 # 正常人的阅读速度大概每分钟三百个字
     visitor: # 需要引入并开启valine的visitor选项使之开始计数; 可能会和busuanzi统计的有出入
-      enable: true
+      enable: false
       alert: <i class="fas fa-book-reader fa-fw"></i>
       unit: 次
     tags: # 显示博文标签
@@ -533,7 +533,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
     copyright: | # 我的文章使用最宽松的知识共享协议：署名 4.0 国际 (CC BY 4.0)。您可以自由地：共享 — 在任何媒介以任何形式复制、发行本作品；演绎 — 修改、转换或以本作品为基础进行创作；在任何用途下，甚至商业目的。只要你遵守许可协议条款，许可人就无法收回你的这些权利。惟须遵守下列条件：署名 — 您必须给出适当的署名，提供指向本许可协议的链接，同时标明是否（对原始作品）作了修改。您可以用任何合理的方式来署名，但是不得以任何方式暗示许可人为您或您的使用背书。
       <br/>
       <i class="fas fa-coffee fa-fw"></i>
-      <a href="/merger/">如果这篇博客帮助到你，可以请我喝一杯咖啡~</a>
+      <a href="www.github.com">每一天都需要过得轻松一些~~</a>
       <br/>
       <i class="fab fa-creative-commons-by fa-fw"></i>
       <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">CC BY 4.0</a>（除特别声明或转载文章外）
@@ -544,46 +544,46 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
     posts_count:
       enable: true # 博文数量统计
       alert: 篇博文。长路漫漫！ # 提示语
-  merger: # 打赏页，需要配置！
-    append_to_head:
-      - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
-        <script>
-          var usage = "payment";
-          var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
-          var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
-          var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
-          var paypal = "https://paypal.me/wukan0621";
-          var myname = "WuK";
-          var profile = "https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320";
-          var multilingual = true;
-          var myname_hans = "吴坎";
-          var myname_hant = "吴坎";
-          var myname_eng = "WuK";
-          var title = "选择你的支付方式";
-          var subtitle = "跟随进一步的指示以向" + myname + "付款";
-          var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
-        </script>
-      - |
-        <meta
-          charset="utf-8"
-        />
-        <meta
-          name="viewport"
-          content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-        />
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="upgrade-insecure-requests"
-        />
-      - | # merger的页面样式
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
-        />
-        <script
-          src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
-          defer='defer'
-        ></script>
+  # merger: # 打赏页，需要配置！
+  #   append_to_head:
+  #     - | # 需要配置的变量见<https://merger.justhx.com/cn/docs/configure>
+  #       <script>
+  #         var usage = "payment";
+  #         var wechat = "wxp://f2f0BhUoIC_9gex7-tC2PRvVuoA486mK5WyC";
+  #         var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=CAEQ77zFwQMY-6u57gU%3D_xxx_sign&u=942759535&n=%E8%94%9A";
+  #         var alipay = "https://qr.alipay.com/fkx02750b5kbplxvudqrx16";
+  #         var paypal = "https://paypal.me/wukan0621";
+  #         var myname = "WuK";
+  #         var profile = "https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320";
+  #         var multilingual = true;
+  #         var myname_hans = "吴坎";
+  #         var myname_hant = "吴坎";
+  #         var myname_eng = "WuK";
+  #         var title = "选择你的支付方式";
+  #         var subtitle = "跟随进一步的指示以向" + myname + "付款";
+  #         var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+  #       </script>
+  #     - |
+  #       <meta
+  #         charset="utf-8"
+  #       />
+  #       <meta
+  #         name="viewport"
+  #         content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  #       />
+  #       <meta
+  #         http-equiv="Content-Security-Policy"
+  #         content="upgrade-insecure-requests"
+  #       />
+  #     - | # merger的页面样式
+  #       <link
+  #         rel="stylesheet"
+  #         href="https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/styles/spectre.css/spectre-modified.min.css,gh/hifocus/merger@0.21.1/assets/styles/style.min.css"
+  #       />
+  #       <script
+  #         src='https://cdn.jsdelivr.net/combine/gh/hifocus/merger@0.21.1/assets/js/jQuery/jquery.min.js,gh/hifocus/merger@0.21.1/assets/js/jquery-qrcode/jquery-qrcode.min.js,gh/hifocus/merger@0.21.1/assets/js/JavaScript_MD5/md5.min.js,gh/hifocus/merger@0.21.1/assets/js/function.min.js,gh/hifocus/merger@0.21.1/assets/js/font_974919_xgtacm93vxp.min.js'
+  #         defer='defer'
+  #       ></script>
   home: # 用于生成ppt的模板，看不懂的话可以不用配置
     append_to_section_tag:
       - key: data-markdown
